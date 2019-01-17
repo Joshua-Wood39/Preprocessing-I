@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.container nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+}
+.container nav a {
+  width: 150px;
+  height: 40px;
+  color: #494949;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+.container a:hover {
+  color: white;
+  background-color: #103610;
+}
+.container .selfie {
+  width: 320px;
+  height: 240px;
+  margin: 15px 20px 0;
+}
+.container .selfiepic {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid #494949;
+}
+.container .animate {
+  animation-name: morph;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.container .selfie p {
+  text-align: center;
+  font-size: 26px;
+}
+.container .tech {
+  width: 400px;
+  height: 280px;
+  margin-top: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid #494949;
+}
+@media (max-width: 500px) {
+  .container .tech {
+    isplay: none;
+  }
+}
+.container header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container header h1 {
+  font-size: 45px;
+  font-family: Oswald;
+  color: #494949;
+  background-color: #103610;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #494949;
+}
+.container h1 {
+  padding: 10px 0;
+}
+.container .middle {
+  margin-top: 120px;
+}
+.container .middle p {
+  text-align: center;
+  color: #494949;
+  line-height: 2rem;
+}
+.container .middle .click {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .middle button {
+  margin: 5px auto;
+  font-size: 20px;
+  background-color: black;
+  color: #494949;
+  border: 2px solid #494949;
+  border-radius: 5px;
+}
+.container .middle .theMeat {
+  display: flex;
+  justify-content: space-between;
+  align-items: 0;
+  margin-top: 40px;
+}
+.container .middle h2 {
+  color: #494949;
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid #494949;
+}
+.container .middle .card {
+  width: 48%;
+}
+.container .middle ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
+}
+.container .middle li {
+  list-style-position: inside;
+  margin-bottom: 40px;
+  list-style-type: circle;
+  color: #494949;
+}
+.container .bottom {
+  margin-left: 15px;
+}
+.container .bottom .bottomSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .bottom .card2 {
+  width: 23%;
+}
+.container .bottom li {
+  list-style-position: inside;
+  margin-bottom: 40px;
+  color: #494949;
+}
+.container .bottom h3 {
+  margin-top: 20px;
+  font-size: 35px;
+  color: #494949;
+}
+.container .bottom h4 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: #494949;
+}
+.container h5 {
+  color: #494949;
+  border: 2px solid #494949;
+  font-size: 30px;
+}
+@keyframes morph {
+  0% {
+    color: #494949;
+  }
+  15% {
+    color: #4a8339;
+  }
+  30% {
+    color: #3388b9;
+  }
+  45% {
+    color: #4646a1;
+  }
+  60% {
+    color: #8d45aa;
+  }
+  80% {
+    color: #cf4183;
+  }
+  100% {
+    color: #494949;
+  }
+}

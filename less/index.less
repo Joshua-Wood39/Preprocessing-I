@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	
 	line-height: 1;
 }
 ol, ul {
@@ -54,6 +55,211 @@ table {
 }
 
 html, body {
-    height: 100%;
+	margin: 0;
+	height: 100%;
+	background-color: black;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, Arial, sans-serif;
+  }
+
+.container {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+
+
+  	nav {
+		.custom-layout (flex, space-around, center);
+		margin: 10px auto;
+  	}
+
+  	nav a {
+	  	width: 150px;
+	  	height: 40px;
+	  	color: rgb(73, 73, 73);
+	  	font-size: 2rem;
+	  	text-align: center;
+	  t	ext-decoration: none;
+  	}
+
+  	a:hover{
+	 	color: white;
+	  	background-color: rgb(16, 54, 16);
+  	}
+
+  	.selfie {
+	  	width: 320px;
+	  	height: 240px;
+	  	margin: 15px 20px 0;
+  	}
+
+  	.selfiepic {
+	  	max-width: 100%;
+	  	max-height: 100%;
+	  	.border;
+  	}
+
+  	.animate {
+	  	animation-name: morph;
+	  	animation-duration: 10s;
+	  	animation-iteration-count: infinite;
+  	}
+
+  	.selfie p {
+	  	text-align: center;
+	  	font-size: 26px;
+  	}
+
+  	.tech {
+	  	width: 400px;
+	  	height: 280px;
+	  	margin-top: 50px;
+	  	max-width: 100%;
+	  	max-height: 100%;
+	  	.border;
+	  	@media (max-width: 500px) {
+		  	isplay: none;
+	  	}
+  	}	
+
+
+  	header {
+		 display: flex;
+		 justify-content: space-around;
+		 align-items: center;
+		h1 {
+			font-size: 45px;
+	  		font-family: Oswald;
+	  		color: rgb(73, 73, 73);
+	  		background-color: rgb(16, 54, 16);
+	  		text-align: center;
+	  		padding: 10px;
+	  		.border;
+		}	
+	  }
+	  
+  	h1 {
+	  	padding: 10px 0;
+  	}
+
+  	.middle {
+		margin-top: 120px;
+
+		p {
+			text-align: center;
+			color: rgb(73, 73, 73);
+			line-height: 2rem;
+		}
+
+		.click {
+			margin-top: 10px;
+			.custom-layout(flex, center, center);
+		}
+
+		button {
+			margin: 5px auto;
+			font-size: 20px;
+			background-color: black;
+			color: rgb(73, 73, 73);
+			.border;
+			border-radius: 5px;
+		}
+
+		.theMeat {
+			.custom-layout(flex, space-between, 0);
+			margin-top: 40px;
+		}
+
+		h2 {
+			color: rgb(73, 73, 73);
+			font-size: 30px;
+			padding: 10px;
+			.border;
+		}
+
+		.card {
+			width: 48%;
+		}
+
+		ul {
+			.custom-layout(flex, space-around, center);
+			flex-direction: column;
+			align-items: baseline;
+		}
+
+		li {
+			list-style-position: inside;
+			margin-bottom: 40px;
+			list-style-type: circle;
+			color: rgb(73, 73, 73);
+		}
+
+  	}
+
+  .bottom {
+
+		margin-left: 15px;
+	
+		.bottomSec {
+			.custom-layout(flex, space-between, center);
+
+		}
+
+		.card2 {
+			width: 23%;
+		}
+
+		li {
+			list-style-position: inside;
+			margin-bottom: 40px;
+			color: rgb(73, 73, 73);
+		}
+
+		h3 {
+			margin-top: 20px;
+			font-size: 35px;
+			color: rgb(73, 73, 73);
+		}
+
+		h4 {
+			text-decoration: underline;
+			margin-bottom: 20px;
+			color: rgb(73, 73, 73);
+		}	
+  }
+
+  	h5 	{
+		color: @graystandard;
+		.border;
+		font-size: 30px;
+
+	}
+
+}
+
+
+
+	.border() {
+		border: 2px solid rgb(73, 73, 73);
+	}
+
+  	.custom-layout (@display, @justify, @align) {
+		display: @display;
+		justify-content: @justify;
+		align-items: @align;
+  	}
+  
+	@graystandard: rgb(73, 73, 73);
+
+	@keyframes morph {
+		0% {color: rgb(73, 73, 73)};
+		15% {color: rgb(74, 131, 57)};
+		30% {color: rgb(51, 136, 185)};
+		45% {color: rgb(70, 70, 161)};
+		60% {color: rgb(141, 69, 170)};
+		80% {color: rgb(207, 65, 131)};
+		100% {color: rgb(73, 73, 73)};
+	}
+	
